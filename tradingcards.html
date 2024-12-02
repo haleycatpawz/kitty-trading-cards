@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">.
+    <title>My HTML notes</title>
+    <!-- linking the css file  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- linking the javascript file -->
+    <script type='module' src="tradingCardData.js" defer></script>
+</head>
+
+
+<body>
+
+    <div class="mainBox">
+
+        <h1 class="cardCollectionTitle">Wild Cats</h1>
+        <!-- html code to display a left button on the screen-->
+        <button id="leftButton"><img id="leftButtonImg" src="images/brownLeftArrow.png" alt="left button"><img></button>
+
+        <!-- html code for creating the card's main divs
+  nameTextBox which is the animal's general name
+  animal image to display the animal's image
+  and infoBox to display the animal's detailed info-->
+        <div class="cardBox">
+            <h2 id="nameTextBox">Cat</h2>
+            <img id="animalImage" src="https://placebear.com/g/200/300" alt="cat image"><img>
+
+            <!-- box that contains the animal's info; info includes interesting facts, other facts, and more text-->
+            <div class="infoBox">
+                <p id="animalFact">fun fact about this animal</p>
+                <ul class="listItems">
+                    <li><span class="labelName">Sciencetific Name:</span><span id="scientificName">feline</span>
+                    </li>
+                    <li><span class="labelName">Average Length:</span><span id="avgLength">0 centimeters</span></li>
+                    <li><span class="labelName">Average Lifespan:</span><span id="avgLifespan">0 years</span></li>
+                    <li><span class="labelName">Habitat:</span><span id="habitat">habitat</span></li>
+                </ul>
+                <div id="descriptionText">description text</div>
+            </div>
+        </div>
+
+        <!-- html code to display a right button on the screen-->
+        <button id="rightButton"><img id="rightButtonImg" src="images/brownRightArrow.png"
+                alt="rightButton button"><img></button>
+
+
+    </div>
+    <h1 id="cardIndexNumber"></h1>
+
+
+</body>
+
+
+</html>
